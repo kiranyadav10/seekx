@@ -1,12 +1,13 @@
 import React from 'react'
 import fashion from "../assets/fashion.jpg"
 
-const Fashion = () => {
+const Fashion = (props:any) => {
+  const {img}= props
   return (
     <div className="relative">
     <img
       className="w-full h-fit object-cover object-center"
-      src={fashion}
+      src={img}
       alt="Banner"
     />
   </div>

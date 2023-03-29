@@ -14,6 +14,19 @@ import TrendingTshirts from "../Component/HomePageSection/TrendingTshirts";
 import Fashion from "../Component/Fashion";
 import FeatureProduct from "../Component/HomePageSection/FeatureProduct";
 import AllBrandCard from "../Component/HomePageSection/AllBrandCard";
+import fashion from "../assets/fashion.jpg";
+import banner3 from "../assets/banner3.png";
+import DiscountCard from "../Component/DiscountCard";
+import dia1 from "../assets/dia1.png";
+import dia2 from "../assets/dia2.png";
+import HalfCircleRight from "../Component/HalfCircle";
+import HalfCircleLeft from "../Component/HalfCircleLeft";
+import DayReturn from "../assets/SvgImg/DayReturn";
+import QalPro from "../assets/SvgImg/QalPro";
+import SafePay from "../assets/SvgImg/SafePay";
+import HelpLine from "../assets/SvgImg/HelpLine";
+import Policy from "../Component/HomePageSection/Policy";
+import SearchComp from "../assets/SvgImg/SearchComp";
 
 const HomePage = () => {
   console.log(
@@ -37,7 +50,7 @@ const HomePage = () => {
           <FeatureProduct />
         </div>
       </div>
-      <Fashion />
+      <Fashion img={fashion} />
       <div className="flex flex-col gap-20 px-24 justify-center align-middle">
         <Divider divideName={"New Products"} />
         <FeatureProduct />
@@ -46,7 +59,18 @@ const HomePage = () => {
         <div className="flex w-full justify-center">
           <button className="w-40 h-12 text-white">VIEW ALL</button>
         </div>
-        <AllBrandCard/>
+        <AllBrandCard />
+      </div>
+      <Fashion img={banner3} />
+      <div className="flex flex-col gap-20 px-24 w-full justify-center align-middle">
+        <div className="flex gap-5 w-full justify-center">
+          <DiscountCard img={dia1} discount={"85"} bgColor={"#CCCEA7"} />
+          <DiscountCard img={dia2} discount={"75"} bgColor={"#D6BEBE"} />
+        </div>
+      </div>
+      <Policy />
+      <div className="flex flex-col gap-20 px-24 w-full justify-center align-middle">
+        <SearchComp />
       </div>
     </div>
   );
