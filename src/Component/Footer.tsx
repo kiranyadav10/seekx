@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container p-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-4">
           <div className="mb-6">
-            <p className="text-black-900 dark:text-black-900 pr-10">
+            <p className="text-black-900 dark:text-black-900 xs:pr-0 md:pr-10">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -177,7 +177,7 @@ const Footer = () => {
           </div>
 
           <div className="mb-6">
-          <h5 className="mb-2.5 font-bold uppercase text-red-800 dark:text-red-700">
+            <h5 className="mb-2.5 font-bold uppercase text-red-800 dark:text-red-700">
               STORE INFORMATION
             </h5>
 
@@ -242,13 +242,13 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-neutral-200 p-4 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
+      <div className="bg-neutral-200 p-4 text-center text-red-900 dark:bg-red-900 dark:text-neutral-200">
         © 2023 Copyright:
         <a
           className="text-neutral-800 dark:text-neutral-400"
           href="https://tailwind-elements.com/"
         >
-          Tailwind Elements
+          SeekEx
         </a>
       </div>
     </footer>

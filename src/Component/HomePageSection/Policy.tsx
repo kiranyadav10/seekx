@@ -11,7 +11,7 @@ const Policy = () => {
     <>
       <HalfCircleRight />
       <div
-        className="h-48 w-full justify-center align-middle -mt-20 p-5"
+        className="xs:h-32 sm:h-36 md:h-40 lg:h-48 w-full justify-center align-middle -mt-20 p-5"
         style={{ background: "#F5F4F2" }}
       >
         <div className="grid grid-cols-4 divide-x  divide-red-300 justify-center align-middle h-full">
@@ -25,7 +25,9 @@ const Policy = () => {
             }}
           >
             <DayReturn />
-            <span>7 Days Return</span>
+            <span className="leading-4 sm:text-xs text-center">
+              7 Days Return
+            </span>
           </div>
           <div
             style={{
@@ -37,7 +39,9 @@ const Policy = () => {
             }}
           >
             <QalPro />
-            <span>Quality Products</span>
+            <span className="leading-4 sm:text-xs text-center">
+              Quality Products
+            </span>
           </div>
           <div
             style={{
@@ -49,7 +53,9 @@ const Policy = () => {
             }}
           >
             <SafePay />
-            <span>Safe Payment</span>
+            <span className="leading-4 sm:text-xs text-center">
+              Safe Payment
+            </span>
           </div>
           <div
             style={{
@@ -61,7 +67,9 @@ const Policy = () => {
             }}
           >
             <HelpLine />
-            <span>24x7 Helpline</span>
+            <span className="leading-4 sm:text-xs text-center">
+              24x7 Helpline
+            </span>
           </div>
         </div>
       </div>

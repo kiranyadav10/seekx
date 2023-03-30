@@ -5,7 +5,7 @@ const HalfCircleRight = () => {
     <div className="relative flex justify-center items-center">
       <div
         style={{ background: "#770015" }}
-        className="h-24 w-40 absolute right-0 -mr-8
+        className="xs:h-10 sm:h-14 md:h-16 lg:h-24 xs:w-20 sm:w-20 md:w-32 lg:w-40 absolute right-0 -mr-8
                 rounded-tl-full rounded-tr-full -rotate-90"
       ></div>
     </div>
