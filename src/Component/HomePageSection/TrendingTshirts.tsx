@@ -4,7 +4,7 @@ import ProductCrad from '../ProductCrad';
 
 const TrendingTshirts = () => {
   return (
-    <div className="grid grid-cols-4 grid-rows-2 gap-x-1 py-5 gap-y-10">
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 grid-rows-2 gap-x-1 py-5 gap-y-10">
     {trendingTshirts?.map((data: any, idx: number) => {
       return (
         <ProductCrad

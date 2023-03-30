@@ -34,7 +34,7 @@ const HomePage = () => {
     brandCardData?.find((data: any, idx: number) => idx < 2)
   );
   return (
-    <div className="flex flex-col gap-20 pb-5">
+    <div className="flex flex-col gap-20 pb-5 overflow-hidden">
       <Banner />
       <div>
         <CatCards />

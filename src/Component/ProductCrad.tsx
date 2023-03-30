@@ -8,19 +8,17 @@ const ProductCrad = (props: any) => {
   const { name, nameLineSec, price, actualPrice, img } = props;
   return (
     <div className="flex flex-col">
-      <div className="h-96 w-72 min-w-fit relative overflow-hidden">
+      <div className="h-96 sm:w-48 md:w-64 lg:w-72 min-w-fit  relative overflow-hidden">
         <img
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-fit object-cover"
           src={img}
           alt="Room Image"
         />
-        <div className="absolute inset-0 bg-gray-300 opacity-0 hover:backdrop-opacity-10 hover:opacity-90">
-          <div className="flex flex-col p-4">
-            <div className="absolute bottom-36 left-24 flex flex-row gap-2">
-              <CardActivity image={<AddToCart />} />
-              <CardActivity image={<CardLike />} />
-              <CardActivity image={<Share />} />
-            </div>
+        <div className="absolute inset-0 w-64 bg-gray-300 opacity-0 hover:backdrop-opacity-10 hover:opacity-90">
+          <div className="absolute bottom-36 left-16 flex flex-row gap-2">
+            <CardActivity image={<AddToCart />} />
+            <CardActivity image={<CardLike />} />
+            <CardActivity image={<Share />} />
           </div>
         </div>
       </div>
